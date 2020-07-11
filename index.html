@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onclick="jump()">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h2 style="margin: 1rem;">Easiest Game Ever</h2>
+    <div id="game">
+        <div id="character"></div>
+        <div id="block"></div>
+    </div>
+    <p style="margin: 1rem;">Score : <span id="scoreSpan"></span></p>
     <script src="app.js"></script>
 </body>
 </html>
