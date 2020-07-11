@@ -1,8 +1,7 @@
 const character = document.getElementById('character');
 const block = document.getElementById('block');
 var counter=0;
-var speed= 2000;
-
+var speed = 2000;
  function jump() {
     if (character.classList == 'jump') {return}
     character.classList.add('jump')
@@ -18,6 +17,7 @@ let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue(
         block.style.animation = "none";
         alert("Game Over. score: "+Math.floor(counter/100));
         counter=0;
+        speed=2000;
         block.style.animation = "block 1s infinite linear";
     }else{
         counter+=10;
